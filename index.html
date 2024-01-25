@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inspiration Generator</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>AI Inspiration Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>AI Inspiration Generator</h1>
+      </header>
+
+      <main>
+        <div class="form-container">
+          <form id="inspo-generator-form">
+            <input
+              type="text"
+              placeholder="Enter what kind of creative project you are working on and what inspriation you would like"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: "I need a writing prompt" or "I need feature ideas for my app"</div>
+        </div>
+        <div class="inspo hidden" id="inspo"></div>
+      </main>
+
+      <footer>
+        This AI project was coded by
+        <a href="#" target="_blank">Sabre Katana</a>
+        and is
+        <a
+          href="https://github.com/sabrekatana"
+          target="_blank"
+        >
+          open-sourced on GitHub</a
+        >
+        and is
+        <a href="#" target="_blank"
+          >hosted on Netlify</a
+        >.
+      </footer>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
 </html>
